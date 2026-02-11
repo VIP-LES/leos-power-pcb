@@ -4259,143 +4259,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GNDREF"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GNDREF"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GNDREF_0_1"
-				(polyline
-					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GNDREF_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:PWR_FLAG"
 			(power)
 			(pin_numbers
@@ -5058,6 +4921,12 @@
 		(uuid "c131d377-576a-4766-ab6a-0ffe44ca1ea8")
 	)
 	(junction
+		(at 110.49 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1443158-0dc3-4741-a6ed-1ec79c1bd3c4")
+	)
+	(junction
 		(at 106.68 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5104,6 +4973,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f76a9aa9-9953-46a0-bb5d-693d65f78744")
+	)
+	(junction
+		(at 142.24 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe72ba3d-4847-409a-9d0a-88e6d66233d8")
 	)
 	(no_connect
 		(at 247.65 40.64)
@@ -5210,6 +5085,16 @@
 			(type default)
 		)
 		(uuid "0ce5a132-efaf-428b-9db9-8d504225efac")
+	)
+	(wire
+		(pts
+			(xy 142.24 181.61) (xy 142.24 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0de6fa59-dc9b-4b82-a478-c7a61eb34cc8")
 	)
 	(wire
 		(pts
@@ -5423,7 +5308,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 95.25) (xy 152.4 107.95)
+			(xy 152.4 95.25) (xy 152.4 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6103,6 +5988,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 182.88) (xy 142.24 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd8cd885-8570-40d4-af94-30011b7d8a21")
+	)
+	(wire
+		(pts
 			(xy 252.73 31.75) (xy 261.62 31.75)
 		)
 		(stroke
@@ -6451,6 +6346,16 @@
 		)
 		(uuid "1a91fbb8-3595-4fe7-905d-ccad8cad89f6")
 	)
+	(label "FB"
+		(at 160.02 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27806ba6-a675-48c2-bc52-244f647433f6")
+	)
 	(label "TXCAN"
 		(at 54.61 53.34 0)
 		(effects
@@ -6612,7 +6517,7 @@
 		(uuid "aa4f6b2f-faed-468a-b12d-1abafde96181")
 	)
 	(label "VIN"
-		(at 110.49 151.13 0)
+		(at 113.03 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7324,7 +7229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CustomFootprints:IC18_MPM3620AGQV-Z_MNP"
+		(property "Footprint" "LEOS:IC18_MPM3620AGQV-Z_MNP"
 			(at 140.716 173.228 0)
 			(effects
 				(font
@@ -7443,7 +7348,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 170.18 89.2048 0)
 			(effects
 				(font
@@ -7512,7 +7417,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 143.2052 39.37 0)
 			(effects
 				(font
@@ -7581,7 +7486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 159.7152 39.37 0)
 			(effects
 				(font
@@ -7897,6 +7802,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 160.02 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ee5e10f-c01f-463b-b86c-441d4daf335e")
+		(property "Reference" "#PWR036"
+			(at 160.02 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA2"
+			(at 159.893 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 160.02 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1d04214-106f-431e-a28d-291d9992bb66")
+		)
+		(instances
+			(project "LEOS-stack-template"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_Module:RaspberryPi_Pico")
 		(at 247.65 78.74 0)
 		(unit 1)
@@ -8106,7 +8077,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 172.212 113.03 90)
 			(effects
 				(font
@@ -8175,7 +8146,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 165.1 121.158 90)
 			(effects
 				(font
@@ -8441,7 +8412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 125.222 90.17 90)
 			(effects
 				(font
@@ -8576,7 +8547,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 117.8052 58.42 0)
 			(effects
 				(font
@@ -8702,7 +8673,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "19.1k"
 			(at 162.56 170.1799 0)
 			(effects
 				(font
@@ -8711,7 +8682,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 158.242 168.91 90)
 			(effects
 				(font
@@ -8781,7 +8752,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 117.602 156.21 90)
 			(effects
 				(font
@@ -8809,10 +8780,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "39d063ad-d126-4bef-b27d-be64a7073dfb")
+			(uuid "39d063ad-d126-4bef-b27d-be64a7073dfc")
 		)
 		(pin "1"
-			(uuid "52f6cc01-043a-4cf0-b8d0-3e89a16df840")
+			(uuid "52f6cc01-043a-4cf0-b8d0-3e89a16df841")
 		)
 		(instances
 			(project ""
@@ -9025,6 +8996,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 110.49 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "432a5594-6e66-4d22-9fae-6b286637f688")
+		(property "Reference" "#PWR035"
+			(at 110.49 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.982 164.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a4e09c9-e8b6-4159-89c2-cf3f2ba260e8")
+		)
+		(instances
+			(project "LEOS-stack-template"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 110.49 156.21 0)
 		(unit 1)
@@ -9051,7 +9088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 111.4552 160.02 0)
 			(effects
 				(font
@@ -9388,7 +9425,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 170.18 94.2848 0)
 			(effects
 				(font
@@ -9523,7 +9560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 186.3852 73.66 0)
 			(effects
 				(font
@@ -9593,7 +9630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 158.242 156.21 90)
 			(effects
 				(font
@@ -9621,81 +9658,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "39d063ad-d126-4bef-b27d-be64a7073dfb")
+			(uuid "39d063ad-d126-4bef-b27d-be64a7073dfd")
 		)
 		(pin "1"
-			(uuid "52f6cc01-043a-4cf0-b8d0-3e89a16df840")
+			(uuid "52f6cc01-043a-4cf0-b8d0-3e89a16df842")
 		)
 		(instances
 			(project ""
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 72.39 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e74c6fe-66d7-43dc-b177-25c5b9b765b3")
-		(property "Reference" "#FLG01"
-			(at 72.39 146.685 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 72.39 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 72.39 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 72.39 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4dc7ef57-548b-43b5-a7da-4fe47495b7e1")
-		)
-		(instances
-			(project ""
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -9897,6 +9868,71 @@
 			(project ""
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.16 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7239921d-8f6f-45e1-b018-d7bd9b51a9bd")
+		(property "Reference" "#PWR031"
+			(at 137.16 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 136.652 184.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97489df7-4d64-48f2-9c97-93c971cd6179")
+		)
+		(instances
+			(project "LEOS-stack-template"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -10129,7 +10165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 188.722 71.12 90)
 			(effects
 				(font
@@ -10396,7 +10432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 108.712 62.23 90)
 			(effects
 				(font
@@ -10598,7 +10634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 151.13 121.158 90)
 			(effects
 				(font
@@ -10776,7 +10812,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 152.4 107.95 0)
+		(at 152.4 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10785,7 +10821,7 @@
 		(fields_autoplaced yes)
 		(uuid "90f022ca-0807-4693-bd02-7de1452d6d84")
 		(property "Reference" "#PWR027"
-			(at 152.4 114.3 0)
+			(at 152.4 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10794,7 +10830,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 113.03 0)
+			(at 152.4 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10802,7 +10838,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 107.95 0)
+			(at 152.4 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10811,7 +10847,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 107.95 0)
+			(at 152.4 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10820,7 +10856,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 107.95 0)
+			(at 152.4 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10835,73 +10871,6 @@
 			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 110.49 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91407c97-c583-4b0f-9536-0a0607bb6ebe")
-		(property "Reference" "#PWR035"
-			(at 110.49 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 110.49 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 110.49 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e1b95933-7824-400b-88ce-a90e5e03bc71")
-		)
-		(instances
-			(project ""
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -11108,84 +11077,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 160.02 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a7024373-fa1e-4442-b3d9-7e93c1646b56")
-		(property "Reference" "#PWR036"
-			(at 160.02 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 160.02 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50d9297b-c247-42b1-bec7-993b1f22ffe0")
-		)
-		(instances
-			(project ""
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 160.02 151.13 0)
+		(at 142.24 181.61 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ae27102f-029f-48ee-bcf8-5b7e3b7eae60")
-		(property "Reference" "#FLG05"
-			(at 160.02 149.225 0)
+		(uuid "a6af67fc-9ce0-4ff5-abb6-3b477345e32b")
+		(property "Reference" "#FLG07"
+			(at 144.145 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11194,7 +11096,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 160.02 146.05 0)
+			(at 147.32 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11203,7 +11105,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 151.13 0)
+			(at 142.24 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11212,7 +11114,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 151.13 0)
+			(at 142.24 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11221,7 +11123,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 160.02 151.13 0)
+			(at 142.24 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11230,12 +11132,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "09daa309-6ef7-4325-9fe6-482dc70b2c9b")
+			(uuid "03192460-d726-4419-a33f-48f9fff01fae")
 		)
 		(instances
-			(project ""
+			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#FLG05")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -11336,7 +11238,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LEOS:IND_TAIYO_NRS8030_TAY"
 			(at 149.86 31.75 0)
 			(effects
 				(font
@@ -11373,6 +11275,139 @@
 			(project ""
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 110.49 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1ac2d72-bb57-4988-b8bb-b6584f5a23b9")
+		(property "Reference" "#FLG06"
+			(at 110.49 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 110.49 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23294793-7af6-4a95-a853-ed20405c8752")
+		)
+		(instances
+			(project "LEOS-stack-template"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "#FLG06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 142.24 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b25c5a7a-af07-4009-aa98-1beac539fa75")
+		(property "Reference" "#PWR032"
+			(at 142.24 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA2"
+			(at 142.113 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 142.24 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9a3a924-7dad-4445-b96b-2a3dff0e086f")
+		)
+		(instances
+			(project "LEOS-stack-template"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -11439,6 +11474,72 @@
 			(project ""
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 170.18 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba3bcdaf-6ac5-4825-9225-bcf559af74f8")
+		(property "Reference" "#PWR034"
+			(at 170.18 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 169.672 164.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed8c5c29-bc98-43b7-94be-42dae79a0f4f")
+		)
+		(instances
+			(project "LEOS-stack-template"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -11875,72 +11976,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDREF")
-		(at 137.16 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c98861be-2028-47bd-9bc4-926a8d49f6fa")
-		(property "Reference" "#PWR032"
-			(at 137.16 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 137.16 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 137.16 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ad46ef43-df55-4a54-941f-35c222523e9a")
-		)
-		(instances
-			(project ""
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 39.37 76.2 0)
 		(unit 1)
@@ -12285,7 +12320,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 171.1452 160.02 0)
 			(effects
 				(font
@@ -12313,10 +12348,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f8353a6e-5524-4d99-9812-3777b0ff92d4")
+			(uuid "f8353a6e-5524-4d99-9812-3777b0ff92d5")
 		)
 		(pin "2"
-			(uuid "88b4a300-f2e5-4a7c-a043-98a3b102647a")
+			(uuid "88b4a300-f2e5-4a7c-a043-98a3b102647b")
 		)
 		(instances
 			(project ""
@@ -12526,73 +12561,6 @@
 			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "C06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 170.18 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e65c7201-bc72-4833-bfe7-2904bbd7c3d8")
-		(property "Reference" "#PWR034"
-			(at 170.18 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 170.18 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 170.18 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e1b95933-7824-400b-88ce-a90e5e03bc71")
-		)
-		(instances
-			(project ""
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -13150,72 +13118,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9e62ded-400d-4728-9e13-5c58b58529a4")
-		(property "Reference" "#PWR031"
-			(at 142.24 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 142.24 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "44950a05-222a-46b5-bf2a-91ffee0092b3")
-		)
-		(instances
-			(project ""
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 171.45 78.74 0)
 		(unit 1)
@@ -13242,7 +13144,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 169.672 78.74 90)
 			(effects
 				(font
