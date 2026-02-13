@@ -71,10 +71,6 @@
         [
           "silk_edge_clearance|200000000|71220000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|da9d9e38-1afd-49f3-afc5-5f8299137a77",
           ""
-        ],
-        [
-          "silk_overlap|130698669|54146733|4e1fa2a1-0219-4bcb-917c-83ddafbf02f9|92f2cda6-f12b-4042-8176-b1ebd577c5d7",
-          "Intentional silkscreen design"
         ]
       ],
       "meta": {
@@ -511,10 +507,19 @@
         "wire_width": 6
       },
       {
+        "name": "12V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
         "clearance": 0.1,
         "name": "5V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.75,
@@ -524,7 +529,7 @@
         "clearance": 0.2,
         "name": "CAN",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25
       }
@@ -546,6 +551,10 @@
       {
         "netclass": "CAN",
         "pattern": "/CAN-"
+      },
+      {
+        "netclass": "12V",
+        "pattern": "+12V"
       }
     ]
   },
